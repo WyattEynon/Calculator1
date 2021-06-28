@@ -16,3 +16,9 @@ class Calculator:
     def sqrt(self, a):
         self.result = a ** 0.5
         return self.result
+    def multiply(self, a, b):
+        self.result =a * b
+        return self.result
+    def divide(self, a, b):
+        self.result = a / b
+        return self.result
