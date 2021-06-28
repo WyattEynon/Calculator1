@@ -18,7 +18,9 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_results_property(self):
-        self.assertEqual(self.calculator.result, 0)
+        calculator = Calculator()
+        calculator.add(2,1)
+        self.assertEqual(self.calculator.result, 3)
 
 
 if __name__ == '__main__':
