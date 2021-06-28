@@ -20,5 +20,5 @@ class Calculator:
         self.result =a * b
         return self.result
     def divide(self, a, b):
-        self.result = a / b
+        self.result = b / a
         return self.result
