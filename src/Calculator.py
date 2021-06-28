@@ -7,7 +7,7 @@ class Calculator:
     def add(self, a, b):
         self.result = a + b
         return self.result
-    def subtract(self, a, b):
+    def subtract(self, b, a):
         self.result = a-b
         return self.result
     def square(self, a):
