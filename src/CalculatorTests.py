@@ -33,6 +33,27 @@ class MyTestCase(unittest.TestCase):
             myCalc = Calculator()
             myResult = myCalc.divide((int(row['Value 1'])), (int(row['Value 2'])))
             self.assertEqual((((row['Result']))), (myResult))
+
+    def test_multiplication(self):
+        test_data = CsvReader('/src/csvTests/Unit Test Multiplication.csv').data
+        for row in test_data:
+            myCalc = Calculator()
+            myResult = myCalc.multiply((int(row['Value 1'])), (int(row['Value 2'])))
+            self.assertEqual((((row['Result']))), (myResult))
+
+    def test_square_root(self):
+        test_data = CsvReader('/src/csvTests/Unit Test Square Root.csv').data
+        for row in test_data:
+            myCalc = Calculator()
+            myResult = myCalc.sqrt((int(row['Value 1'])), (int(row['Value 2'])))
+            self.assertEqual((((row['Result']))), (myResult))
+
+    def test_square(self):
+        test_data = CsvReader('/src/csvTests/Unit Test Square.csv').data
+        for row in test_data:
+            myCalc = Calculator()
+            myResult = myCalc.square((int(row['Value 1'])), (int(row['Value 2'])))
+            self.assertEqual((((row['Result']))), (myResult))
     #def test_instantiate_calculator(self):
         #self.assertIsInstance(self.calculator, Calculator)
     #def test_results_property(self):
