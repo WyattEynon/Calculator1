@@ -18,8 +18,14 @@ class MyTestCase(unittest.TestCase):
             myCalc = Calculator()
             myResult = myCalc.subtract((int(row['Value 1'])),(int(row['Value 2'])))
             self.assertEqual(((int(row['Result']))),(myResult))
-
             #self.assertEqual(self.calculator.result, int(row['Result']))
+
+    def test_addition(self):
+        test_data = CsvReader('/src/csvTests/Unit Test Addition.csv').data
+        for row in test_data:
+            myCalc = Calculator()
+            myResult = myCalc.add((int(row['Value 1'])), (int(row['Value 2'])))
+            self.assertEqual(((int(row['Result']))), (myResult))
     #def test_instantiate_calculator(self):
         #self.assertIsInstance(self.calculator, Calculator)
     #def test_results_property(self):
