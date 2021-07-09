@@ -1,3 +1,10 @@
+from Calculator.addition import addition
+from Calculator.subtraction import subtraction
+from Calculator.squaring import squaring
+from Calculator.squareRoot import squareRoot
+from Calculator.multiplication import multiplication
+from Calculator.division import division
+
 class Calculator:
 
     def __init__(self):
@@ -8,42 +15,14 @@ class Calculator:
 
 
     def add(self, a, b):
-        if ((type(a) is int) or (type(a) is float)) and ((type(b) is int) or (type(b) is float)):
-            self.result = a + b
-            return self.result
-        else:
-            print("Not valid input")
+        addition(a,b)
     def subtract(self, b, a):
-        if ((type(a) is int) or (type(a) is float)) and ((type(b) is int) or (type(b) is float)):
-            self.result = a-b
-            return self.result
-        else:
-            print("Not valid input")
+        subtraction(b,a)
     def square(self, a):
-        if ((type(a) is int) or (type(a) is float)) and ((type(b) is int) or (type(b) is float)):
-            self.result = a*a
-            return self.result
-        else:
-            print("Not valid input")
+        squaring(a)
     def sqrt(self, a):
-        if ((type(a) is int) or (type(a) is float)):
-            self.result = a ** 0.5
-            return self.result
-        else:
-            print("Not valid input")
+        squareRoot(a)
     def multiply(self, a, b):
-        if ((type(a) is int) or (type(a) is float)):
-            self.result =a * b
-            return self.result
-        else:
-            print("Not valid input")
+        multiplication(a,b)
     def divide(self, a, b):
-        if ((type(a) is int) or (type(a) is float)):
-            try:
-                self.result = b / a
-                return self.result
-            except ZeroDivisionError:
-                print("Divide By Zero Error")
-                return None
-        else:
-            print("Not valid input")
+        division(a,b)
