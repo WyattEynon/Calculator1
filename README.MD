@@ -1,3 +1,3 @@
-Basic calculator with unittests that is more a testment to test based development than it is useful software.
+Advanced calculator with unittests and statistical functions.
 
-![Unit Tests Good](src/unit test completed.jpg)
+![Unit Tests Good](thumb.jpg)
