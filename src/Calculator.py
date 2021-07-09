@@ -39,7 +39,11 @@ class Calculator:
             print("Not valid input")
     def divide(self, a, b):
         if ((type(a) is int) or (type(a) is float)):
-            self.result = b / a
-            return self.result
+            try:
+                self.result = b / a
+                return self.result
+            except ZeroDivisionError:
+                print("Divide By Zero Error")
+                return None
         else:
             print("Not valid input")
