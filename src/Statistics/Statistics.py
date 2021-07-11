@@ -1,4 +1,4 @@
-import Calculator
+from Calculator import Calculator
 from Statistics.Mean import mean
 
 class statistics(Calculator):

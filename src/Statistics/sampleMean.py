@@ -1,5 +1,5 @@
-from Calculator import addition
-from Calculator import division
+from Calculator.Calculator import addition
+from Calculator.Calculator import division
 import getSamp
 #Pulled From Example Files
 def sample_mean(data, sample_size):
