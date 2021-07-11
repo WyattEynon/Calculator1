@@ -1,6 +1,6 @@
 from Calculator import addition
 from Calculator import division
-from Statistics import getSamp
+import getSamp
 #Pulled From Example Files
 def sample_mean(data, sample_size):
 
@@ -14,8 +14,9 @@ def sample_mean(data, sample_size):
         sample = getSamp(data, sample_size)
         num_values = len(sample)
         for num in sample:
-            total = addition(total, num)
-         return division(total, num_values)
+            total = addition(total,num)
+
+        return division(total, num_values)
     else:
         raise Exception("Sample must be larger than 0 and no more than the sample size")
         #TO DO implement unit test that tests this exception
